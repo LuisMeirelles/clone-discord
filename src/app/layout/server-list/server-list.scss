@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 16px;
+
+  gap: 8px;
+
+  & > app-side-avatar:first-child {
+    position: relative;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      position: absolute;
+
+      content: '';
+
+      display: block;
+
+      width: 32px;
+
+      height: 1px;
+      background: #212124;
+
+      bottom: -9px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@if (servers$ | async; as servers) {
+  @for (server of servers; track server.id) {
+    <app-side-avatar [name]="server.name" />
+  }
+}

@@ -1,0 +1,26 @@
+:host {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+
+  background: #5865f2;
+
+  cursor: pointer;
+
+  & > .name {
+    display: none;
+    margin: 0 10px;
+    word-wrap: break-word;
+    font-size: .5rem;
+  }
+
+  &:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > .name {
+      display: initial;
+    }
+  }
+}
