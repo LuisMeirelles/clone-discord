@@ -1,12 +1,16 @@
-<app-sidebar-item tabindex="1">
-  <app-icon name="logoDiscord" />
+<app-sidebar-item tabindex="0">
+  <app-discord-logo />
 </app-sidebar-item>
 
 @if (servers$ | async; as servers) {
   @for (server of servers; track server.id) {
     <app-sidebar-item
       [title]="server.name"
-      [tabIndex]="$index + 2"
+      tabindex="0"
     />
   }
 }
+
+<app-sidebar-item tabindex="0">
+  <app-circle-plus-icon />
+</app-sidebar-item>

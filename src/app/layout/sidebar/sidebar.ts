@@ -4,10 +4,11 @@ import { ServersApi } from '../../servers/servers-api';
 import { Server } from '../../servers/server';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
-import { Icon } from '../icons/icon';
+import { DiscordLogo } from '../icons/discord-logo/discord-logo';
+import { CirclePlusIcon } from '../icons/circle-plus-icon/circle-plus-icon';
 
 @Component({
-  imports: [SidebarItem, AsyncPipe, Icon],
+  imports: [SidebarItem, AsyncPipe, DiscordLogo, CirclePlusIcon],
   selector: 'app-sidebar',
   styleUrl: './sidebar.scss',
   templateUrl: './sidebar.html',

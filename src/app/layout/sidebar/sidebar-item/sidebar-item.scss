@@ -11,6 +11,11 @@
 
   transition: background-color 0.3s;
 
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
   &:hover,
   &:focus-visible {
     background-color: #5865f2;
