@@ -1,7 +1,8 @@
 :host {
+  display: block;
   height: min-content;
 
-  & > svg {
+  app-icon > svg {
     display: block;
   }
 }

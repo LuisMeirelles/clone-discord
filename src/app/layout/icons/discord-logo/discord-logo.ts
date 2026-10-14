@@ -3,7 +3,7 @@ import { Icon } from '../icon';
 
 @Component({
   selector: 'app-discord-logo',
-  styleUrl: '../icon.scss',
   templateUrl: './discord-logo.html',
+  imports: [Icon],
 })
-export class DiscordLogo extends Icon {}
+export class DiscordLogo {}

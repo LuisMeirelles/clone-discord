@@ -3,7 +3,7 @@ import { Icon } from '../icon';
 
 @Component({
   selector: 'app-circle-plus-icon',
-  styleUrl: '../icon.scss',
   templateUrl: './circle-plus-icon.html',
+  imports: [Icon],
 })
-export class CirclePlusIcon extends Icon {}
+export class CirclePlusIcon {}
