@@ -1,0 +1,7 @@
+:host {
+  height: min-content;
+
+  & > svg {
+    display: block;
+  }
+}

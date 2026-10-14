@@ -4,9 +4,10 @@ import { ServersApi } from '../../servers/servers-api';
 import { Server } from '../../servers/server';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
+import { Icon } from '../icons/icon';
 
 @Component({
-  imports: [SidebarItem, AsyncPipe],
+  imports: [SidebarItem, AsyncPipe, Icon],
   selector: 'app-sidebar',
   styleUrl: './sidebar.scss',
   templateUrl: './sidebar.html',
