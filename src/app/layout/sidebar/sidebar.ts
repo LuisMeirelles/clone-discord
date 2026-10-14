@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { SideAvatar } from './side-avatar/side-avatar';
+import { SidebarItem } from './sidebar-item/sidebar-item';
 import { ServersApi } from '../../servers/servers-api';
 import { Server } from '../../servers/server';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
-  imports: [SideAvatar, AsyncPipe],
+  imports: [SidebarItem, AsyncPipe],
   selector: 'app-sidebar',
   styleUrl: './sidebar.scss',
   templateUrl: './sidebar.html',

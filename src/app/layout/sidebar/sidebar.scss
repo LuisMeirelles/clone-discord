@@ -6,11 +6,14 @@
 
   gap: 8px;
 
-  & > app-side-avatar:first-child {
+  & > app-sidebar-item:first-child {
     position: relative;
     margin-bottom: 9px;
+
     display: flex;
+
     justify-content: center;
+    align-items: center;
 
     &::after {
       position: absolute;
@@ -20,11 +23,10 @@
       display: block;
 
       width: 32px;
-
       height: 1px;
-      background: #212124;
-
       bottom: -9px;
+
+      background: #212124;
     }
   }
 }
