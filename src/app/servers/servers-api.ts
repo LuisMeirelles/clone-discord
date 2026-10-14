@@ -3,7 +3,7 @@ import { Server } from './server';
 import { delay, Observable, of } from 'rxjs';
 
 @Service()
-export class ServersService {
+export class ServersApi {
   public getAll(): Observable<Server[]> {
     return of([
       { id: 1, name: 'Lorem' },
