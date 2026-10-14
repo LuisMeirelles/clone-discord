@@ -6,9 +6,10 @@ import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 import { DiscordLogo } from '../icons/discord-logo/discord-logo';
 import { CirclePlusIcon } from '../icons/circle-plus-icon/circle-plus-icon';
+import { CompassIcon } from '../icons/compass-icon/compass-icon';
 
 @Component({
-  imports: [SidebarItem, AsyncPipe, DiscordLogo, CirclePlusIcon],
+  imports: [SidebarItem, AsyncPipe, DiscordLogo, CirclePlusIcon, CompassIcon],
   selector: 'app-sidebar',
   styleUrl: './sidebar.scss',
   templateUrl: './sidebar.html',
