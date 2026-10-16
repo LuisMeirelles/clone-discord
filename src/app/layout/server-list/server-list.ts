@@ -11,10 +11,10 @@ import { CompassIcon } from '../icons/compass-icon/compass-icon';
 @Component({
   imports: [SidebarItem, AsyncPipe, DiscordLogo, CirclePlusIcon, CompassIcon],
   selector: 'nav[app-sidebar]',
-  styleUrl: './sidebar.scss',
-  templateUrl: './sidebar.html',
+  styleUrl: './server-list.scss',
+  templateUrl: './server-list.html',
 })
-export class Sidebar {
+export class ServerList {
   public servers$: Observable<Server[]>;
 
   constructor(private readonly serversService: ServersApi) {

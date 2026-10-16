@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Sidebar } from './layout/sidebar/sidebar';
+import { ServerList } from './layout/server-list/server-list';
 
 @Component({
-  imports: [RouterOutlet, Sidebar],
+  imports: [RouterOutlet, ServerList],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
