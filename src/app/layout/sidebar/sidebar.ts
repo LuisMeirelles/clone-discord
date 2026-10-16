@@ -10,7 +10,7 @@ import { CompassIcon } from '../icons/compass-icon/compass-icon';
 
 @Component({
   imports: [SidebarItem, AsyncPipe, DiscordLogo, CirclePlusIcon, CompassIcon],
-  selector: 'app-sidebar',
+  selector: 'nav[app-sidebar]',
   styleUrl: './sidebar.scss',
   templateUrl: './sidebar.html',
 })
