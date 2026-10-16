@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SidebarItem } from './sidebar-item/sidebar-item';
-import { ServersApi } from '../../servers/servers-api';
-import { Server } from '../../servers/server';
+import { ServersApi } from '../../services/servers/servers-api';
+import { Server } from '../../services/servers/server';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 import { DiscordLogo } from '../icons/discord-logo/discord-logo';

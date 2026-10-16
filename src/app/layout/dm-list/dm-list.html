@@ -1,0 +1,37 @@
+<header>
+  <button>Encontre ou comece uma conversa</button>
+</header>
+
+<main>
+  <ul>
+    <li>
+      <a href="">Amigos</a>
+    </li>
+    <li>
+      <a href="">Nitro</a>
+    </li>
+    <li>
+      <a href="">Loja</a>
+    </li>
+    <li>
+      <a href="">Missões</a>
+    </li>
+  </ul>
+
+  <div class="dm">
+    <div class="old-messages">
+      <div>Mensagens diretas</div>
+      <app-plus-icon />
+    </div>
+
+    <ul>
+      @if (chats$ | async; as chats) {
+        @for (chat of chats; track chat.id) {
+          <li>
+            <a href="">{{ chat.username }}</a>
+          </li>
+        }
+      }
+    </ul>
+  </div>
+</main>

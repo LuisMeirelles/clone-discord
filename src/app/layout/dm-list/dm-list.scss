@@ -1,0 +1,46 @@
+:host {
+  border: 1px solid #212124;
+  border-radius: 8px;
+  padding: 8px;
+
+  main {
+    ul > li {
+      border-radius: 6px;
+
+      transition: background-color .3s;
+
+      &:not(:last-child) {
+        margin-bottom: 1px;
+      }
+
+      &:hover {
+        background-color: #2d2d30;
+      }
+
+      > a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #81828A;
+      }
+    }
+
+    > ul > li {
+      list-style-type: none;
+      color: #81828A;
+
+      background: 8px 22px;
+    }
+
+    > .dm {
+      border-top: 1px solid #212124;
+
+      > .old-messages {
+        color: #81828A;
+
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
