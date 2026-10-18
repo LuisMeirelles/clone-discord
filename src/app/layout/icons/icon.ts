@@ -12,9 +12,10 @@ import { Component, input } from '@angular/core';
     '[attr.width]': 'size()',
     '[attr.height]': 'size()',
     fill: 'none',
-    '[attr.viewBox]': '`0 0 ${size()} ${size()}`',
+    '[attr.viewBox]': '`0 0 ${viewBoxSize()} ${viewBoxSize()}`',
   },
 })
 export class Icon {
+  viewBoxSize = input(24);
   size = input(24);
 }
