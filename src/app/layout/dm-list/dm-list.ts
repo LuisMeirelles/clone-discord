@@ -8,6 +8,8 @@ import { TurbineIcon } from '../icons/turbine-icon/turbine-icon';
 import { StoreIcon } from '../icons/store-icon/store-icon';
 import { LaurelsIcon } from '../icons/laurels-icon/laurels-icon';
 import { EllipsisIcon } from '../icons/ellipsis-icon/ellipsis-icon';
+import { ChatApi } from '../../services/chats/chat-api';
+import { DiscordLogo } from '../icons/discord-logo/discord-logo';
 
 @Component({
   imports: [
@@ -18,6 +20,7 @@ import { EllipsisIcon } from '../icons/ellipsis-icon/ellipsis-icon';
     StoreIcon,
     LaurelsIcon,
     EllipsisIcon,
+    DiscordLogo,
   ],
   selector: 'nav[app-dm-list]',
   styleUrl: './dm-list.scss',
@@ -25,4 +28,8 @@ import { EllipsisIcon } from '../icons/ellipsis-icon/ellipsis-icon';
 })
 export class DmList {
   public chats$: Observable<Chat[]>;
+
+  constructor(readonly chatApi: ChatApi) {
+    this.chats$ = chatApi.getInbox();
+  }
 }

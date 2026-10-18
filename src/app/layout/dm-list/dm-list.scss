@@ -109,6 +109,28 @@
           }
         }
       }
+
+      > ul {
+        > li {
+          list-style-type: none;
+          color: #81828A;
+
+          > a {
+            display: flex;
+            gap: 12px;
+
+            > app-discord-logo {
+              width: 32px;
+              height: 32px;
+
+              border-radius: 50%;
+
+              background-color: #5865f2;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
     }
   }
 }

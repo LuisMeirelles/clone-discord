@@ -3,7 +3,7 @@ import { Chat } from './chat';
 import { delay, Observable, of } from 'rxjs';
 
 @Service()
-export class ServersApi {
+export class ChatApi {
   public getInbox(): Observable<Chat[]> {
     return of([
       { id: 1, username: 'Lorem' },
