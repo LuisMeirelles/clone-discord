@@ -74,17 +74,38 @@
         color: #81828A;
         font-size: 14px;
 
+        margin-bottom: 4px;
+
+        > span {
+          cursor: default;
+        }
+
         &:hover {
           > span {
             color: #FFFFFF;
           }
+
+          > .action-buttons > app-ellipsis-icon {
+            display: flex;
+          }
         }
 
-        > .action-buttons > app-plus-icon {
-          cursor: pointer;
+        > .action-buttons {
+          display: flex;
+          align-items: center;
+          gap: 8px;
 
-          &:hover {
-            color: #ABACB2;
+          > app-plus-icon,
+          > app-ellipsis-icon {
+            cursor: pointer;
+
+            &:hover {
+              color: #ABACB2;
+            }
+          }
+
+          > app-ellipsis-icon {
+            display: none;
           }
         }
       }
