@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Icon } from '../icon';
 
 @Component({
@@ -6,4 +6,6 @@ import { Icon } from '../icon';
   templateUrl: './plus-icon.html',
   imports: [Icon],
 })
-export class PlusIcon {}
+export class PlusIcon {
+  public size = input(24);
+}

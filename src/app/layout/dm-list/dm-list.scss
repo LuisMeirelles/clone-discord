@@ -1,9 +1,31 @@
 :host {
   border: 1px solid #212124;
   border-radius: 8px;
-  padding: 8px;
+  width: 295px;
+
+  header {
+    padding: 8px;
+    border-bottom: 1px solid #212124;
+
+    > button {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      padding: 3px 11px;
+      background: #212124;
+      border: none;
+      border-radius: 8px;
+      color: #FBFBFB;
+      min-height: 30px;
+      min-width: 30px;
+      width: 100%;
+    }
+  }
 
   main {
+    padding: 8px;
+
     ul > li {
       border-radius: 6px;
       cursor: pointer;
@@ -31,19 +53,40 @@
       }
     }
 
-    > ul > li {
-      list-style-type: none;
-      color: #81828A;
+    > ul {
+      padding-bottom: 12px;
+
+      > li {
+        list-style-type: none;
+        color: #81828A;
+      }
     }
 
     > .dm {
       border-top: 1px solid #212124;
+      padding-top: 12px;
 
       > .direct-messages {
-        color: #81828A;
-
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
+        color: #81828A;
+        font-size: 14px;
+
+        &:hover {
+          > span {
+            color: #FFFFFF;
+          }
+        }
+
+        > .action-buttons > app-plus-icon {
+          cursor: pointer;
+
+          &:hover {
+            color: #ABACB2;
+          }
+        }
       }
     }
   }
