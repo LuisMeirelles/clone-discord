@@ -71,7 +71,10 @@
       }
 
       > .buttons {
-        > .microphone {
+        display: flex;
+        gap: 8px;
+
+        > .button {
           display: flex;
           align-items: center;
 

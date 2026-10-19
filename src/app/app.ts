@@ -5,9 +5,18 @@ import { DmList } from './layout/dm-list/dm-list';
 import { DiscordLogo } from './layout/icons/discord-logo/discord-logo';
 import { MicrophoneIcon } from './layout/icons/microphone-icon/microphone-icon';
 import { ChevronDownIcon } from './layout/icons/chevron-down-icon/chevron-down-icon';
+import { HeadphonesIcon } from './layout/icons/headphones-icon/headphones-icon';
 
 @Component({
-  imports: [RouterOutlet, ServerList, DmList, DiscordLogo, MicrophoneIcon, ChevronDownIcon],
+  imports: [
+    RouterOutlet,
+    ServerList,
+    DmList,
+    DiscordLogo,
+    MicrophoneIcon,
+    ChevronDownIcon,
+    HeadphonesIcon,
+  ],
   selector: 'app-root',
   styleUrl: './app.scss',
   templateUrl: './app.html',
