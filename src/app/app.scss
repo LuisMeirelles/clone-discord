@@ -69,6 +69,19 @@
           }
         }
       }
+
+      > .buttons {
+        > .microphone {
+          display: flex;
+          align-items: center;
+
+          > button {
+            background: none;
+            border: none;
+            color: #ABACB2;
+          }
+        }
+      }
     }
   }
 }
